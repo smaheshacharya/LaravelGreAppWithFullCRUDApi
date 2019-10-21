@@ -1,0 +1,187 @@
+
+/* General Css For all pages  */
+body{
+	background-color: #00b8c2;
+	
+}
+/* navbar */
+.navbar ul li > a {
+	color: rgb(48, 46, 46);
+	font-weight:bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	margin-left: 20px;
+
+	
+  
+  }
+.navbar-brand{
+	color:rgb(48, 46, 46);
+	font-weight: bold;
+	text-shadow: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	opacity: .8;
+}
+/* }
+.navbar{
+	background-color: #2196f3;
+
+}
+ul.nav li > a {
+  color: #FFFFFF;
+  font-weight:bold;
+   background-color:#2196f3;
+
+}
+ul.nav li > a:hover {
+  color: #FFFFFF;
+  opacity: .7;
+  background-color:#2196f3;
+
+
+}
+.navbar-brand{
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.navbar-brand:hover{
+	color:#FFFFFF;
+	font-weight: bold;
+	opacity: .7;
+} */
+
+/* Css for Cards pages index.blade.php  */
+.card
+{
+	margin: 10px;
+	display: none;
+	padding: 0px !important;
+	box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.2), 0 6px 20px 0 rgba(15, 15, 15, 0.2);
+	
+	
+	
+}
+.card-header 
+{
+	color: #ee530c;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+.card-footer 
+{
+	color: rgb(107, 102, 102);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	
+
+
+}
+.card-body{
+	color: rgb(107, 102, 102);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+
+	
+}
+.card-body p {
+	color: rgb(107, 102, 102);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	color: #ee530c;
+	font-weight: bold;
+	font-size: 13px;
+	opacity: .7;
+	
+}
+.card-body ul li.about {
+	color: gray;
+	display: block;
+	list-style:none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+
+}
+.btn{
+	background-color: #ee530c;
+	color: #ffffff;
+	border: none !important;
+}
+.btn-link{
+	color: #ee530c
+}
+.btn-link:hover{
+	color: #ee530c;
+	opacity: .6;
+}
+.btn:hover{
+	background-color: #ee530c;
+	opacity: .8;
+
+}
+.form-group input:focus, textarea:focus {
+	box-shadow: 0 0 5px #ee530c;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #ee530c;
+	
+  }
+  .about{
+	  align-items: center;
+
+
+  }
+  h1
+  {
+	  color: #ffffff;
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  /* Swiper slider  */
+
+  .swiper-container {
+	width: 400px;
+	height: auto;
+  }
+  .swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+.fa-heart{
+	float: right;
+}
+
+
+  /* footer */
+
+  #footer{
+	 background: #ffffff;
+	 height: 40px;
+	 width: 100%;
+	 color: #ee530c;
+	 font-family: Verdana, Geneva, Tahoma, sans-serif;
+	 text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 10px;
+
+
+  }
+  label{
+	  font-weight:bold;
+	  
+  }
