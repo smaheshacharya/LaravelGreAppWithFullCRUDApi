@@ -26,6 +26,7 @@ Route::get('/basic', 'PageController@basic');
 Route::get('/inter', 'PageController@inter');
 Route::get('/adv', 'PageController@adv');
 Route::resource('vocab','VocabController');
+Route::get('/store_progress', 'UserprogressController@store_progress');//user progress store data 
 
 // Route::resource('/cruds', 'CrudsController');
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');

@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Create Your Account <a href="SignUP">SignUP</a> or <a href="">Login</a></div>
+                <div class="card-header">Create Your Account <a href="{{url('register')}}">SignUP</a> or <a href="{{url('login')}}">Login</a></div>
                     <div class="card-body">
                         <p>Connect with Us by Signing up in GRE Vocab with your personal information.</p> 
                     </div>

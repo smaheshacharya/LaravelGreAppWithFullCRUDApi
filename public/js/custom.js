@@ -32,3 +32,16 @@ $( "#heart" ).click(function() {
     }
 
 });
+
+$(window).load(function () {
+    start = event.timeStamp;
+});
+$(window).unload(function(){
+    var time = event.timeStamp - start;
+    $.ajax({
+        url: 'store_progress',
+        type: 'POST',
+        data: JSON.stringify({ time }),
+    });
+    return false;
+});

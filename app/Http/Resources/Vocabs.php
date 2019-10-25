@@ -31,5 +31,6 @@ class Vocabs extends JsonResource
             'version' => '1.0.0',
             'author_url' => url('https://wwww.alphateds.com')
         ];
+        
     }
 }

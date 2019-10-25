@@ -15,6 +15,7 @@ class AddMnemonics extends Migration
     {
         Schema::table('vocabs', function ($table) {
             $table->string('mnemonics');
+            $table->int('time_spend');
             $table->mediumText('example');
         });
     }
