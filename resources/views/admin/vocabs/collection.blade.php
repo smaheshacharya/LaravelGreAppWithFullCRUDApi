@@ -10,7 +10,7 @@
                               <div class="swiper-slide">
                                   
                 <div  class="card" style="width:350px; height:auto;">
-                <div class="card-header">{{$vocab->title }} &nbsp;<i class="fas fa-volume-up"></i><i id="heart" class="far fa-heart"></i></div>
+                <div class="card-header">{{$vocab->title }} &nbsp;<i id="vol" class="fas fa-volume-up"></i><i id="heart" class="far fa-heart"></i></div>
                 <audio src="" hidden class="speech" ></audio>
                     <div style="height:auto; padding:50px;" class="card-body">
                      {!!$vocab->brief!!}
@@ -60,7 +60,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $('.fas').on('click',function(e){
+        $('#vol').on('click',function(e){
             e.preventDefault();
             var users = {!! json_encode($vocab->toArray()) !!};
             var text = users['title'];
@@ -69,6 +69,9 @@
             $('audio').attr('src',url).get(0).play();
            
         });
+  });
+  $('.btn-danger').on('click',function(){
+    alert("Are you sure !");
   });
 
 </script>

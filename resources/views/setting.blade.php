@@ -50,15 +50,7 @@
         </div>
     </div>
     @endauth
-    @if(count($user_data)>0)
-    <p>{{$user_data->time}}</p>
 
-    @else
-    <div class="card">
-                
-        <div class="card-header">Signup or Login to show your progress. </div>
-    </div>
-    @endif
 
 </div>
 

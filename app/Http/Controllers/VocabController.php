@@ -27,6 +27,13 @@ class VocabController extends Controller
      */
     public function create()
     {
+        if(auth()->user()->id !== 1 ){
+            if(auth()->user()->id !== 3){
+                return redirect(url('/vocab'))->with('error','Unauthorize Page');
+            }
+           
+        }
+
         return view('admin.vocabs.manipulation.add');
     }
 

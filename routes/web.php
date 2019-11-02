@@ -14,8 +14,9 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/','PageController@home');
 
-Route::get('/','PageController@index');
+Route::get('/index','PageController@index');
 Route::get('/setting','PageController@setting');
 Route::get('/about','PageController@about');
 
@@ -27,6 +28,8 @@ Route::get('/inter', 'PageController@inter');
 Route::get('/adv', 'PageController@adv');
 Route::resource('vocab','VocabController');
 Route::get('/store_progress', 'UserprogressController@store_progress');//user progress store data 
+Route::get('/show_progress', 'UserprogressController@show_progress');//user progress store data 
+
 
 // Route::resource('/cruds', 'CrudsController');
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');

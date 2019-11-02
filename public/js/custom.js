@@ -33,15 +33,16 @@ $( "#heart" ).click(function() {
 
 });
 
-$(window).load(function () {
+$(window).on('load',function () {
     start = event.timeStamp;
 });
-$(window).unload(function(){
+$(window).on('unload',function(){
     var time = event.timeStamp - start;
+    console.log(time);
     $.ajax({
         url: 'store_progress',
-        type: 'POST',
-        data: JSON.stringify({ time }),
+        type: 'get',
+        data:{'time':time },
     });
     return false;
 });
