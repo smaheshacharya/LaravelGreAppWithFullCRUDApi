@@ -35,11 +35,11 @@ class VocabapiController extends Controller
         $vocab->id = $request->input('id');
         $vocab->title = $request->input('title');
         $vocab->brief = $request->input('brief');
-        $vocab->world_level = $request->input('world_level');
+        $vocab->word_level = $request->input('word_level');
         $vocab->mnemonics = $request->input('mnemonics');
         $vocab->example = $request->input('example');
         if($vocab->save()){
-            return new VocabsResources($vocab);
+            return new VocabsResource($vocab);
         }
 
 
